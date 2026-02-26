@@ -1,5 +1,16 @@
 // college my notes : 
 
+// array can hold multiple values of different data types
+const mixedArray = [
+  42,                 // number
+  "hello",            // string
+  true,               // boolean
+  null,               // null
+  undefined,          // undefined
+  { name: "Alice" },  // object
+  [1, 2, 3],          // array
+  function () {}      // function
+];
 
 
 // // basic array operations    (script 14)
