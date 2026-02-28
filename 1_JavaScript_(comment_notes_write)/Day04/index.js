@@ -49,8 +49,8 @@ console.log("02" > 1);   // true, string is converted to number
 // ex- 
 let num1 = 10;
 let str1 = "10";
-console.log(num===str);   // so here it first check the datatype if same or not, and then check both values
-// fale // since diff data type. 
+console.log(num1 === str1);   // so here it first check the datatype if same or not, and then check both values
+// false // since diff data type. 
 
 
 // Alwaya use === strict equality . unless you intentonally want to compare diff datatype values
@@ -65,13 +65,13 @@ console.log(num===str);   // so here it first check the datatype if same or not,
 //xtra-
 let num2 = 10;
 let str2 = "10xs";
-console.log("ehello",num2==str2);   
+console.log("hello", num2 == str2);   
 // false ,    since conversion hoo hee nahi sakta str -> number . so directly it will give false
 
 
 //--------------------------------------------------------------------
 
-//** null == undefined 
+// null == undefined 
 // true  
 
 // While == usually does type conversion into a common type and then compares, null and undefined are a special exception:
@@ -81,18 +81,18 @@ console.log("ehello",num2==str2);
 
 
 
-//** null=== undefined 
+// null === undefined 
 // false
 
 // here in this case of strick equality - it does type check . and here its differnt - this false.
 
 
 
-// console.log(undefined!=null);  
+console.log(undefined!=null);  
 //  false ,
 // it thinks they are equal . thus not unequal -so  false
 
-// console.log(undefined!==null);  
+console.log(undefined!==null);  
 // true , 
 // since they are not equal . thus  unequal -so true 
 
@@ -125,26 +125,26 @@ console.log("ehello",num2==str2);
 
 // null comparison
 
-// console.log(null==0);  // fasle - since only equal to undefiend and nothing else (hardcoded exception)
-// console.log(null!=0);  // true - since not equal to any other value except undefined
+console.log(null==0);  // fasle - since only equal to undefiend and nothing else (hardcoded exception)
+console.log(null!=0);  // true - since not equal to any other value except undefined
 
 // console.log(null<0);   now here its doing type conversion of null to number 0 , and then comparing with 0. 
 //so 0 < 0 is false.
 
-// console.log(null>0);    0 > 0 is false
-// console.log(null<=0);     0 <= 0 is true
-// console.log(null>=0);     0 >= 0 is true
+console.log(null>0);    // 0 > 0 is false
+console.log(null<=0);    //  0 <= 0 is true
+console.log(null>=0);     // 0 >= 0 is true
 
 
 
 
 // undefined comparison
 
-// console.log(undefined==0);  // false - since only equal to null and nothing else (hardcoded exception)
-// console.log(undefined<0);    //  Nan < 0 is false
-// console.log(undefined>0);    //  Nan > 0 is false
-// console.log(undefined<=0);   //  Nan <= 0 is false
-// console.log(undefined>=0);   //  Nan >= 0 is false
+console.log(undefined==0);   // false - since only equal to null and nothing else (hardcoded exception)
+console.log(undefined<0);    //  Nan < 0 is false
+console.log(undefined>0);    //  Nan > 0 is false
+console.log(undefined<=0);   //  Nan <= 0 is false
+console.log(undefined>=0);   //  Nan >= 0 is false
 
 
 

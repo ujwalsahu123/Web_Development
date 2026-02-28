@@ -9,18 +9,15 @@ console.log(3
 console.log("Hitesh")
 
 
-let name = "hitesh"
-let age = 18
-let isLoggedIn = false
-let state;
-let nullValue = null
+let name = "hitesh" // string => ""
+let age = 18 // number => 2 to power 53 - 1
+let isLoggedIn = false // boolean => true/false
+let state; // undefined => declare but not assigned. 
 
-// number => 2 to power 53
+let nullValue = null // null => standalone value
+
+
 // bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => declare but not assigned. 
 // symbol => unique
 
 

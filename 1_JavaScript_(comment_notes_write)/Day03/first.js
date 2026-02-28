@@ -41,38 +41,37 @@ let function1 = function() {
 
 //so to store multiple key:value type data (which are giving info about the same thing) we make a object of that thing and store all the info in key value pair. 
 
-// let obj = {
-//     key1: "value1",
-//     key2: "value2",
-//   }
+let obj = {
+    key1: "value1",
+    key2: "value2",
+  }
 
 // so instead of doing this : 
-// let user_name = "Rohit";
-// let account_number: 31242314213;
-// let balance: 420;
+let user_name = "Rohit";
+let account_number: 31242314213;
+let balance: 420;
 
 // we can make a object : 
-// let obj = {
-//    user_name: "Rohit",
-//    account_number: 31242314213,
-//    balance: 420
-// }
-// 
-//console.log(typeof obj);  // object
+let obj = {
+   user_name: "Rohit",
+   account_number: 31242314213,
+   balance: 420
+}
+
+console.log(typeof obj);  // object
 
 
 // to access entire object - obj_name
 
-// console.log(obj);
+console.log(obj);
 
 // to access each values of the object - we use the key name. 
 
-// object.key_name 
-// object["key_name"]
+object.key_name 
+object["key_name"]
 
-// console.log(obj.user_name);  // Rohit
-// console.log(  obj["user_name"]  );  // Rohit
-// console.log(obj.balance);  // 420
+console.log(obj.user_name);  // Rohit
+console.log( obj["user_name"] );  // Rohit
 
 
 
@@ -82,14 +81,14 @@ let function1 = function() {
 
 // we can store a function in a variable and then use that variable_name to call the function 
 
-// let fun = function(){
-//     console.log("Hello Coder army");
-//     return 10;
-// }
+let fun = function(){
+    console.log("Hello Coder army");
+    return 10;
+}
 
-// console.log(fun());
+console.log(fun());
 
-// console.log(typeof(function))  -  function
+console.log(typeof(fun));  // function
 
 
 
@@ -109,37 +108,37 @@ let function1 = function() {
 //                   Number()
 
 // 1) using this we can convert a string to number
-// let account_balance = "100";   
-// let num = Number(account_balance);
+let account_balance = "100";   
+let num = Number(account_balance);
 
+console.log(typeof account_balance);    // string
+console.log(typeof num);   // number
 
 // but aisa nahi ki koi bhi string ko number mein convert kar diya . only numeric string can be converted.
-// let account = "100xs";
-// let bal = "200s"
-// console.log(Number(account));    / NaN  not a number , you are tyring to convert it to a number but not possible so it gives NaN.
-// console.log(Number(bal));        / NaN
+let account = "100xs";
+let bal = "200s"
+console.log(Number(account));    // NaN -> not a number , you are tyring to convert it to a number but not possible so it gives NaN.
+console.log(Number(bal));        // NaN
 
-// console.log(typeof account_balance);    // string
-// console.log(typeof num);   // number
 
 
 
 // 2) Boolean to number
-// let x = false;
-// console.log(Number(x));   // 0
+let x = false;
+console.log(Number(x));   // 0
 //  true ->  1 ,   false  -> 0
 
 
 
 // 3) null to number 
 
-// let x1 = null;
-// console.log(Number(x1));  / 0
+let x1 = null;
+console.log(Number(x1));  // 0
 // null -> 0
 
-// 4)undefined to number
-// let x2;
-// console.log(Number(x2));  // NaN   (there is nothing , so it tell not a number)
+// 4) undefined to number
+let x2;
+console.log(Number(x2));  // NaN   (there is nothing , so it tell not a number)
 
 
 // so 
@@ -150,8 +149,10 @@ let valueInNumber = Number(nameFirst)
 console.log(typeof valueInNumber);        // number  // convert too hogaya string to number
 console.log(valueInNumber);               // NaN (Not a Number) - but when we try to convert a string that cannot be converted to a number it will return NaN
 
-// to number conversion
-// Number(value/variable)
+
+
+// for number conversion -------------------------
+// var = Number(value/variable)
 
 // "33" => 33    // can be converted to number
 // "33abc" => NaN    // cannot be converted to number
@@ -169,18 +170,18 @@ console.log(valueInNumber);               // NaN (Not a Number) - but when we tr
 //                      String()
 
 // 1) number to string
-// let ab = 20;
-// console.log(String(ab));
+let ab = 20;
+console.log(String(ab));
 // "20"    (easy convert hoga)
 
 // 2) boolean to string
-// let ax = false; 
-// console.log(String(ax));
+let ax = false; 
+console.log(String(ax));
 // "false"       (string ban gaya)
 
 
 
-// to string conversion
+// for string conversion ---------------------
 // String(value/variable)
 
 // 33 => "33"
@@ -200,14 +201,14 @@ console.log(valueInNumber);               // NaN (Not a Number) - but when we tr
 
 //                      Boolean()
 
-// let str_var = " hello ";
-// console.log(Boolean(str_var));  // true
-// let str_var1 = "";
-// console.log(Boolean(str_var1));  // false
+let str_var = " hello ";
+console.log(Boolean(str_var));  // true
+let str_var1 = "";
+console.log(Boolean(str_var1));  // false
 // (non empty string -> true, empty string -> false)
 
 
-// to Boolean conversion
+// to Boolean conversion -----------------------
 // Boolean(value/variable) 
 
 // 1 => true // non zero number
@@ -331,8 +332,10 @@ console.log(str3);     // "hello hitesh"
 // we can also use + operator to concatenate strings and numbers but will take the datatype of the first operand
 console.log("1" + 2);   // 12    here "1" is a string so it will concatenate with 2 as a string
 console.log(1 + "2");   // 12   // here 1 is a number so it will concatenate with "2" as a string
-console.log("1" + 2 + 2);   // 122  // here "1" is a string so it will concatenate with 2 as a string and then again concatenate with 2 as a string
+console.log("1" + 2 + 2);   // 122  // here "1" is a string so it will concatenate with 2 as a string -> so "12" + 2 then again concatenate with 2 as a string
 console.log(1 + 2 + "2"); // 32     // here 1 and 2 are numbers so it will add them first and then concatenate with "2" as a string
+
+//(left to right precedence)  so it will evaluate from left to right and if it finds a string then it will concatenate with the next operand as a string.
 
 
 // we can also use the unary plus operator (+) to convert a value to a number
