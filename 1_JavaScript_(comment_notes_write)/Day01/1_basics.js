@@ -84,9 +84,11 @@ let userName;  // define a variable
 
 userName = "Hitesh"  // declare a variable
 
+let new_var = 3.2 // define and declare a variable on single line
+
 let num1, num2, num3   // define multiple variables in a single line
 
 num1 = num2 = num3 = 2  // declare multiple variables in a single line (single value assign to all variables)
 
-let a = 1 , b = 2, c = 3 // define & declare multiple variables in a single line
+let a = 1 , b = 2 , c = 3 // define & declare multiple variables in a single line
 

@@ -209,3 +209,37 @@ console.log(Array.isArray(abc));
 // let ac = new Array(10);
 // console.log(ac.length);
 
+
+
+
+
+
+
+
+
+
+
+
+
+Array
+1. length: Number of elements in the array.
+2. push(): Adds an element at the end.
+3. pop(): Removes the last element.
+4. unshift(): Adds an element at the beginning.
+5. shift(): Removes the first element.
+6. indexOf(): Returns the index of the first occurrence.
+7. includes(): Checks if an element exists.
+8. slice(): Extracts a portion of the array without modifying it.
+9. splice() method in JavaScript is a powerful array method used for
+modifying an array by adding, removing, or replacing elements
+10. toString() converts an array to a string of (comma separated)
+array values.
+11. ES2022 intoduced the array method at():
+12. The join() method also joins all array elements into a string.
+13. concat() method creates a new array by merging
+(concatenating) existing arrays:
+14. The flat() method creates a new array with sub-array elements
+concatenated to a specified depth.
+Creating new Array()
+1. Array.isArray()
+2.
